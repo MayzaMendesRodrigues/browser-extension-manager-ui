@@ -1,80 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="page">
+    <header class="header">
+      <img src="./assets/images/logo.svg" alt="" />
+      <img src="./assets/images/icon-sun.svg" class="header__icon-sun" alt="" />
+    </header>
+
+    <main class="container">
+      <section class="extension">
+        <ul class="extension__lists">
+          <li class="extension__list">
+            <div class="extension__description">
+              <img src="./assets/images/logo-grid-guides.svg" alt="" />
+              <div class="extension__description-text">
+                <h2 class="extension__title">Grid guides</h2>
+                <p class="extension__paragraph">
+                  Simulates various screen resolutions directly within the
+                  browser.
+                </p>
+              </div>
+            </div>
+
+            <div class="extension__command">
+              <button>Remove</button>
+              <div class="extension__toggle"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Lista de Extensões
+
+  Todas
   
-  <title>Frontend Mentor | Browser extensions manager UI</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Extensions List
-
-  All
-  Active
-  Inactive
-
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
+  Ativas
+  
+  Inativas
+  
+ Se você pretende usar o arquivo JSON para preencher os dados dinamicamente, pode excluir o conteúdo abaixo 
   DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
-
+  Inspecione rapidamente layouts de página e visualize os limites dos elementos.
+  Remover
+  
   StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
-
+  Analise e copie instantaneamente o CSS de qualquer elemento da página.
+  Remover
+  
   SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
-
+  Otimiza o uso de recursos do navegador para acelerar o carregamento das páginas.
+  Remover
+  
   JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
-
+  Formata, valida e embeleza respostas JSON diretamente no navegador.
+  Remover
+  
   TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
-
+  Organiza as abas do navegador em grupos e sessões.
+  Remover
+  
   ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
-
+  Simula várias resoluções de tela diretamente no navegador.
+  Remover
+  
   Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
-
+  Permite anotações e notas diretamente em páginas da web para depuração colaborativa.
+  Remover
+  
   GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
-
+  Sobrepõe grades personalizáveis e guias de alinhamento em qualquer página.
+  Remover
+  
   Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
-
+  Extrai instantaneamente paletas de cores de qualquer página.
+  Remover
+  
   LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
-
+  Escaneia e destaca links quebrados em qualquer página.
+  Remover
+  
   DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
-
+  Captura e exporta rapidamente estruturas DOM.
+  Remover
+  
   ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
+  Console de desenvolvedor aprimorado com filtragem e registro avançados.
+  Remover
+   -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/mayza-ynara-mendes-rodrigues/">Mayza Ynara</a>.
+    </div>
+  </body>
 </html>

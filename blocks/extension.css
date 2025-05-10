@@ -1,0 +1,58 @@
+.extension {
+  margin-top: 45px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.extension__lists {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 10px;
+}
+.extension__description {
+  display: flex;
+  width: 300px;
+}
+.extension__description-text {
+  margin-left: 10px;
+}
+.extension__title {
+    font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.extension__paragraph {
+  font-size: 16px;
+  color: hsl(0, 0%, 78%);
+  margin: 0;
+}
+
+.extension__list {
+  background-color: hsl(225, 23%, 24%);
+  border: 1px solid hsl(226, 11%, 37%);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extension__command {
+  display: flex;
+  justify-content: space-between;
+  margin-top:30px;
+  width: 100%;
+}
+
+
+
+.extension__toggle {
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+}
