@@ -1,17 +1,17 @@
 .extension {
-  margin-top: 45px;
-  width: 800px;
+  width: 1000px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .extension__lists {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
+  width: 100%;
+  grid-template-columns: repeat(3, 350px);
   gap: 10px;
+  justify-content: center;
+  margin: 50px auto 0;
+  padding: 0;
 }
 .extension__description {
   display: flex;
@@ -20,7 +20,6 @@
 }
 .extension__description-text {
   margin-left: 15px;
-
 }
 .extension__title {
   font-size: 20px;
@@ -32,7 +31,6 @@
   color: hsl(0, 0%, 78%);
   margin-top: 10px;
   margin-bottom: 0;
- 
 }
 
 .extension__list {
@@ -50,26 +48,28 @@
 .extension__command {
   display: flex;
   justify-content: space-between;
-  margin-top:30px;
+  margin-top: 30px;
   width: 100%;
 }
 
-
-
 .extension__toggle {
- background-color: brown;
+  background-color: brown;
   width: 50px;
   height: 25px;
   border-radius: 200px;
-  
 }
 
-.extension__button{
+.extension__button {
   border-radius: 50px;
   padding: 8px;
   border: 1px solid hsl(226, 11%, 37%);
   background-color: hsl(225, 23%, 24%);
   color: hsl(0, 0%, 93%);
   cursor: pointer;
+}
 
+.extension__button:hover{
+  background-color: hsl(3, 77%, 44%);
+  color: hsl(225, 23%, 24%);
+  font-weight: 600;
 }

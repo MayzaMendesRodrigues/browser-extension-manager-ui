@@ -2,15 +2,14 @@
     font-family: "Noto", Arial, Helvetica, sans-serif;
     max-width: 1440px;
     min-width: 375px;
-    background-color: black;
+    height: 100vh;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
     background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     width: auto;
-   margin: 0 auto;
    overflow-x:hidden ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-/* .att { font-size: 11px; text-align: center; }
-
-.attribution a { color: hsl(228, 45%, 44%); } */

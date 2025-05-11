@@ -1,6 +1,7 @@
 .header{
     margin-top: 45px;
-    width: 1024px;
+    max-width: 1024px;
+    min-width: 340px;
     background-color: hsl(225, 23%, 24%);
     padding: 10px;
     border-radius: 15px;
@@ -9,7 +10,7 @@
 }
 
 .header__icon-sun{
-    background-color: blue;
+    background-color: hsl(226, 11%, 37%);
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
