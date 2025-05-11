@@ -1,7 +1,7 @@
 
 
-.attribution a {
+.attribution  {
   color: hsl(228, 45%, 44%);
-  
+  margin-top: 10px;
     font-size: 11px;
 }

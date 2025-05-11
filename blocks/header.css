@@ -1,7 +1,7 @@
 .header{
-    margin-top: 45px;
-    max-width: 1024px;
-    min-width: 340px;
+    margin-top: 20px;
+    width: 1024px;
+    /* min-width: 340px; */
     background-color: hsl(225, 23%, 24%);
     padding: 10px;
     border-radius: 15px;

@@ -1,6 +1,11 @@
 .extension {
-  width: 1000px;
+}
+
+.extension__nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .extension__lists {
@@ -10,7 +15,7 @@
   grid-template-columns: repeat(3, 350px);
   gap: 10px;
   justify-content: center;
-  margin: 50px auto 0;
+  margin: auto 0;
   padding: 0;
 }
 .extension__description {
@@ -43,6 +48,7 @@
   justify-content: space-between;
   align-items: center;
   width: 320px;
+  max-width: 500;
 }
 
 .extension__command {
@@ -50,26 +56,65 @@
   justify-content: space-between;
   margin-top: 30px;
   width: 100%;
+  align-items: flex-end;
 }
 
-.extension__toggle {
-  background-color: brown;
-  width: 50px;
-  height: 25px;
-  border-radius: 200px;
+.extension__switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.extension__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.extension__slider {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  height: 17px;
+  width: 30px;
+  background-color: hsl(226, 11%, 37%);
+  transition: 0.4s;
+  top: 1;
+  bottom: 0;
+  left: 1;
+  right: 0;
+  border-radius: 34px;
+}
+.extension__slider::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+input:checked + .extension__slider {
+  background-color: #2196f3;
+}
+
+input:checked + .extension__slider::before {
+  transform: translateX(13px);
 }
 
 .extension__button {
-  border-radius: 50px;
-  padding: 8px;
+  border-radius: 34px;
+  padding: 10px;
   border: 1px solid hsl(226, 11%, 37%);
   background-color: hsl(225, 23%, 24%);
   color: hsl(0, 0%, 93%);
   cursor: pointer;
+  height: 34px;
 }
 
-.extension__button:hover{
+.extension__button:hover {
   background-color: hsl(3, 77%, 44%);
   color: hsl(225, 23%, 24%);
-  font-weight: 600;
 }
