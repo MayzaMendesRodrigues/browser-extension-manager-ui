@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/static/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/static/NotoSans-Medium.ttf);
+}
+@font-face {
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/static/NotoSans-Bold.ttf);
+}
+
