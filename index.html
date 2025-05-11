@@ -25,10 +25,22 @@
 
     <main class="container">
       <section class="extension">
-        <ul class="extension__lists">
-          <li class="extension__list">
+        <ul class="extension__lists"></ul>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/mayza-ynara-mendes-rodrigues/">Mayza Ynara</a>.
+    </footer>
+
+    <!--Templates-->
+
+    <template id="extension__template">
+      <li class="extension__list">
             <div class="extension__description">
-              <img src="./assets/images/logo-grid-guides.svg" alt="" />
+              <img class="extension__img" src="./assets/images/logo-grid-guides.svg" alt="" />
               <div class="extension__description-text">
                 <h2 class="extension__title">Grid guides</h2>
                 <p class="extension__paragraph">
@@ -38,76 +50,21 @@
             </div>
 
             <div class="extension__command">
-              <button>Remove</button>
-              <div class="extension__toggle"></div>
+              <button class="extension__button">Remove</button>
+
+              <div class="extension__toggle">
+                <input type="checkbox" id="extension__check">
+                <label for="check" class="extension__checkbox"></label>
+              </div>
             </div>
           </li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- Lista de Extensões
-
-  Todas
-  
-  Ativas
-  
-  Inativas
-  
- Se você pretende usar o arquivo JSON para preencher os dados dinamicamente, pode excluir o conteúdo abaixo 
-  DevLens
-  Inspecione rapidamente layouts de página e visualize os limites dos elementos.
-  Remover
-  
-  StyleSpy
-  Analise e copie instantaneamente o CSS de qualquer elemento da página.
-  Remover
-  
-  SpeedBoost
-  Otimiza o uso de recursos do navegador para acelerar o carregamento das páginas.
-  Remover
-  
-  JSONWizard
-  Formata, valida e embeleza respostas JSON diretamente no navegador.
-  Remover
-  
-  TabMaster Pro
-  Organiza as abas do navegador em grupos e sessões.
-  Remover
-  
-  ViewportBuddy
-  Simula várias resoluções de tela diretamente no navegador.
-  Remover
-  
-  Markup Notes
-  Permite anotações e notas diretamente em páginas da web para depuração colaborativa.
-  Remover
-  
-  GridGuides
-  Sobrepõe grades personalizáveis e guias de alinhamento em qualquer página.
-  Remover
-  
-  Palette Picker
-  Extrai instantaneamente paletas de cores de qualquer página.
-  Remover
-  
-  LinkChecker
-  Escaneia e destaca links quebrados em qualquer página.
-  Remover
-  
-  DOM Snapshot
-  Captura e exporta rapidamente estruturas DOM.
-  Remover
-  
-  ConsolePlus
-  Console de desenvolvedor aprimorado com filtragem e registro avançados.
-  Remover
-   -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="https://www.linkedin.com/in/mayza-ynara-mendes-rodrigues/">Mayza Ynara</a>.
-    </div>
+    </template>
   </body>
+  <script src="./scripts/index.js"></script>
 </html>
+
+
+
+
+
+ 

@@ -20,8 +20,7 @@ The designs were created to the following widths:
 - **Neutral 300**: `hsl(0, 0%, 78%)`
 - **Neutral 200**: `hsl(217, 61%, 90%)`
 - **Neutral 100**: `hsl(0, 0%, 93%)`
-- **Neutral 0**: `hsl(200, 60%, 99%)`
-
+C
 ### Red
 
 - **Red 400**: `hsl(3, 86%, 64%)`
