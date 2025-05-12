@@ -1,0 +1,21 @@
+:root {
+  --bg-page: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --bg-container: hsl(225, 23%, 24%);
+  --color-title: white;
+  --theme: hsl(226, 11%, 37%);
+  --bg-btn: hsl(0, 0%, 78%);
+  --border: 1px solid hsl(226, 11%, 37%);
+   --box-shadow: blue;
+
+
+}
+
+.light-mode {
+  --bg-page: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --bg-container: hsl(0, 0%, 93%);
+  --color-title: hsl(225, 23%, 24%);
+  --theme: hsl(0, 0%, 78%);
+  --bg-btn: hsl(3, 77%, 44%);
+  --border: none;
+  --box-shadow: 5px 5px 5px hsl(0, 0%, 78%);
+}

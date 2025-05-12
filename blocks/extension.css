@@ -1,6 +1,3 @@
-.extension {
-}
-
 .extension__nav {
   display: flex;
   justify-content: space-between;
@@ -8,19 +5,22 @@
   margin-top: 10px;
 }
 
+
 .extension__lists {
   list-style-type: none;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 350px);
-  gap: 10px;
+
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  gap: 15px;
   justify-content: center;
+  place-content: center;
   margin: auto 0;
   padding: 0;
 }
 .extension__description {
   display: flex;
-  width: 300px;
+  width: 100%;
   align-items: start;
 }
 .extension__description-text {
@@ -33,22 +33,22 @@
 
 .extension__paragraph {
   font-size: 16px;
-  color: hsl(0, 0%, 78%);
   margin-top: 10px;
   margin-bottom: 0;
 }
 
 .extension__list {
-  background-color: hsl(225, 23%, 24%);
-  border: 1px solid hsl(226, 11%, 37%);
+  background-color: var(--bg-container);
+  border: var(--border);
   padding: 10px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
-  max-width: 500;
+  box-shadow: var(--box-shadow)
+
+  
 }
 
 .extension__command {
@@ -97,7 +97,7 @@
 }
 
 input:checked + .extension__slider {
-  background-color: #2196f3;
+  background-color: hsl(3, 77%, 44%);
 }
 
 input:checked + .extension__slider::before {
@@ -106,15 +106,24 @@ input:checked + .extension__slider::before {
 
 .extension__button {
   border-radius: 34px;
-  padding: 10px;
   border: 1px solid hsl(226, 11%, 37%);
-  background-color: hsl(225, 23%, 24%);
-  color: hsl(0, 0%, 93%);
+  background-color: var(--bg-container);
+  color: var(--color-title);
   cursor: pointer;
   height: 34px;
+  text-align: center;
+}
+
+.extension__button:active {
+  background-color: hsl(3, 77%, 44%);
+  color: hsl(225, 23%, 24%);
+}
+
+.extension__button:focus {
+  border: 1px solid hsl(3, 77%, 44%);
 }
 
 .extension__button:hover {
-  background-color: hsl(3, 77%, 44%);
-  color: hsl(225, 23%, 24%);
+  background-color: var(--bg-btn);
+  color: var(--color-title);
 }

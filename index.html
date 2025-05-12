@@ -17,7 +17,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body class="page">
+  <body class="page light__mode">
     <header class="header">
       <img src="./assets/images/logo.svg" alt="" />
       <img src="./assets/images/icon-sun.svg" class="header__icon-sun" alt="" />
@@ -28,9 +28,9 @@
         <div class="extension__nav">
           <h1 class="extension__title-principal">Extensions List</h1>
           <div class="extension__buttons">
-            <button class="extension__button">All</button>
-            <button class="extension__button">Active</button>
-            <button class="extension__button">Inactive</button>
+            <button class="extension__button" id="extension__all" role="tab">All</button>
+            <button class="extension__button" id="extension__active" role="tab">Active</button>
+            <button class="extension__button" id="extension__inactive" role="tab">Inactive</button>
           </div>
         </div>
 
@@ -66,7 +66,7 @@
         </div>
 
         <div class="extension__command">
-          <button class="extension__button">Remove</button>
+          <button class="extension__button" role="tab">Remove</button>
 
           <label class="extension__switch">
           <input type="checkbox" class="extension__check" />

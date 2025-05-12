@@ -1,15 +1,13 @@
 .page {
-    font-family: "Noto", Arial, Helvetica, sans-serif;
-    max-width: 1440px;
-    min-width: 375px;
-    height: 100vh;
-    background: linear-gradient(180deg, #040918 0%, #091540 100%);
-    background-repeat: no-repeat;
-    color: white;
-    width: auto;
-   overflow-x:hidden ;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+  font-family: "Noto", Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  min-width: 375px;
+  background: var(--bg-page);
+  background-repeat: no-repeat;
+  color: var(--color-title);
+  overflow-x: hidden;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px 20px;
 
+}
