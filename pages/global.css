@@ -5,9 +5,7 @@
   --theme: hsl(226, 11%, 37%);
   --bg-btn: hsl(0, 0%, 78%);
   --border: 1px solid hsl(226, 11%, 37%);
-   --box-shadow: blue;
-
-
+  --box-shadow: blue;
 }
 
 .light-mode {
@@ -16,6 +14,6 @@
   --color-title: hsl(225, 23%, 24%);
   --theme: hsl(0, 0%, 78%);
   --bg-btn: hsl(3, 77%, 44%);
-  --border: none;
+  --border: 1px solid hsl(0, 0%, 93%);
   --box-shadow: 5px 5px 5px hsl(0, 0%, 78%);
 }

@@ -4,6 +4,7 @@ const themeToggle = document.querySelector(".header__icon-sun");
 const extensionActive = document.querySelector("#extension__active")
 const extensionInactive = document.querySelector("#extension__inactive")
 const extensionAll = document.querySelector("#extension__all")
+
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
@@ -17,15 +18,18 @@ function createExtension(name, logo, description, isActive) {
   const clone = extensionTemplate.content
     .querySelector(".extension__list")
     .cloneNode(true);
+    const checkbox = clone.querySelector(".extension__check")
   clone.querySelector(".extension__img").src = logo;
   clone.querySelector(".extension__img").alt = name;
-  clone.querySelector(".extension__check").checked = isActive;
+  checkbox.checked = isActive;
 
   clone.querySelector(".extension__title").textContent = name;
   clone.querySelector(".extension__paragraph").textContent = description;
   clone.querySelector(".extension__button").addEventListener("click", (evt) => {
     evt.target.closest(".extension__list").remove();
   });
+    
+  
 
   return clone;
 }
